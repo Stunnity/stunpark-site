@@ -8,3 +8,17 @@
     font-display: swap;
 }
 
+
+@font-face {
+    font-family:"Metropolitano";
+    src:
+        url(../fonts/Metropolitano/Metropolitan.ttf) format("truetype"),
+        url(../fonts/Metropolitano/Metropolitan.woff) format("woff"),
+        ;
+    font-display: swap;
+}
+
+
+*{
+    font-family: "Metropolitano", sans-serif;
+}
