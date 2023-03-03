@@ -6,6 +6,7 @@ import VueTypeImports from 'vite-plugin-vue-type-imports'
 
 module.exports = {
   stories: ["../components/**/*.mdx", "../components/**/*.stories.@(js|ts)"],
+  staticDirs: ['../assets'],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
