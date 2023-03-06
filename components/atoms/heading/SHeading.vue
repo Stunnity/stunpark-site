@@ -31,6 +31,7 @@ const styles = computed(() => {
     else if (props.weight == "extrabold") styles += ` font-extrabold`
 
     if (props.color == "primary") styles += ` text-primary`
+    else if (props.color == "secondary") styles += ` text-secondary`
     else if (props.color == "white") styles += ` text-white`
     else if (props.color == "black") styles += ` text-black`
 

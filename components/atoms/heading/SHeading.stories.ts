@@ -23,7 +23,7 @@ const meta: Meta<typeof Heading> = {
             },
         },
         color: {
-            options: ["primary", "white", "black"],
+            options: ["primary", "secondary", "white", "black"],
             control: "select",
             defaultValue: "primary",
             table: {
