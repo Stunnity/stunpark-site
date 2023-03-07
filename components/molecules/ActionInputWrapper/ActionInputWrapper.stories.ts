@@ -1,20 +1,21 @@
 // Button.stories.ts
 import { Meta, StoryFn } from "@storybook/vue3"
 import ActionInputWrapper from "./ActionInputWrapper.vue"
-import SInput from "../atoms/input/SInput.vue"
-import SButton from "../atoms/button/SButton.vue"
+import SInput from "../../atoms/input/SInput.vue"
+import SButton from "../../atoms/button/SButton.vue"
+import SLogo from "../../atoms/logo/SLogo.vue"
 
 const meta: Meta<typeof ActionInputWrapper> = {
     title: "Molecules/ActionInputWrapper",
     component: ActionInputWrapper,
-    subcomponents: { SInput, SButton },
+    subcomponents: { SInput, SButton, SLogo },
     argTypes: {},
 }
 
 export default meta
 
 const Template: StoryFn = (args) => ({
-    components: { ActionInputWrapper, SInput, SButton },
+    components: { ActionInputWrapper, SInput, SButton, SLogo },
     setup() {
         return { args }
     },
