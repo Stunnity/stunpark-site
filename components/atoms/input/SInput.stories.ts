@@ -28,6 +28,13 @@ const meta: Meta<typeof Input> = {
                 type: { summary: "boolean" },
             },
         },
+        border: {
+            control: "boolean",
+            description: "Whether the input has border",
+            table: {
+                type: { summary: "boolean" },
+            },
+        },
     },
 }
 

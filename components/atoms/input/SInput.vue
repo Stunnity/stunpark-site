@@ -9,10 +9,14 @@ const props = withDefaults(defineProps<InputProps>(), {
     value: "",
     error: false,
     color: "white",
+    border: true,
 })
 
 const inputClasses = computed(() => {
-    let classes = `w-full bg-transparent pb-2 pt-1 border-b-2  focus:outline-none `
+    let classes = `w-full bg-transparent focus:outline-none `
+
+    if (props.border) classes += ` border-b-2 pb-2 pt-1`
+
     if (props.error) classes += ` border-b-red-500`
     else classes += ` border-b-gray-300 focus:border-b-white`
 
