@@ -47,7 +47,7 @@
                 </div>
             </div>
         </main>
-        <main class="bg-secondary-light pt-[3.5rem] pb-[15.313rem]" id="features">
+        <main class="bg-secondary-light pt-[3.5rem] pb-[11.313rem]" id="features">
             <div class="max-w-[1220px] m-auto">
                 <div>
                     <div><SHeading class="leading-[4.313rem] text-[3.5rem] text-center" color="secondary"> Powerful features.</SHeading></div>
@@ -233,10 +233,10 @@
                             <SInput required class="placeholder-white" type="text" placeholder="Name" />
                             <SInput required placeholder-color="white" type="email" placeholder="Email Address" />
                         </div>
-                        <div class="py-4">
-                            <STextArea required rows="5" placeholder="Message" class="resize-none" />
+                        <div class="pt-12">
+                            <STextArea required rows="4" placeholder="Message" class="resize-none placeholder-white" />
                         </div>
-                        <div class="py-4">
+                        <div class="py-2">
                             <SButton type="submit" appearance="secondary" class="w-full">
                                 <div class="flex justify-center space-x-2">
                                     <span>

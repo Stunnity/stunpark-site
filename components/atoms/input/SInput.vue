@@ -9,6 +9,7 @@ const props = withDefaults(defineProps<InputProps>(), {
     value: "",
     error: false,
     color: "white",
+    placeholderColor: "gray",
     border: true,
 })
 
@@ -21,6 +22,9 @@ const inputClasses = computed(() => {
     else classes += ` border-b-white/30 focus:border-b-white`
 
     if (props.color == "white") classes += ` text-white`
+
+    if (props.placeholderColor == "gray") classes += ` placeholder-gray-300`
+    else if (props.placeholderColor == "white") classes += ` placeholder-white`
 
     return classes
 })
