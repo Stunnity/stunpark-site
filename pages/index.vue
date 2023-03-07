@@ -36,7 +36,7 @@
             <div class="flex items-center space-x-[3.75rem]">
                 <div class="bg-primary max-w-[511px] rounded-[40px] pt-4">
                     <div class="p-[2.5rem]"><SHeading class="text-[2.5rem] leading-[3.063rem]" color="white">Stress-free parking experience.</SHeading></div>
-                    <img src="../assets/images/stunpark-book-park-mobile-app-interface-iPhone 14 Pro.png" alt="stunpark mobile app booking interface " class="mx-auto" />
+                    <img src="../assets/images/stunpark-book-park-mobile-app-interface.png" alt="stunpark mobile app booking interface " class="mx-auto" />
                 </div>
                 <div class="max-w-[560px]">
                     <SHeading class="leading-[4.313rem] text-[3.5rem]">It’s all about a new parking experience.</SHeading>
