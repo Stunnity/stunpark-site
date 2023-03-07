@@ -1,6 +1,6 @@
 import { HeadingTypes } from './SHeading.types';
 <template>
-    <h2 :class="styles">
+    <h2 :class="styles" v-bind="$attrs">
         <slot></slot>
     </h2>
 </template>
@@ -10,7 +10,6 @@ import { computed } from "vue"
 import { HeadingTypes } from "./SHeading.types"
 
 const props = withDefaults(defineProps<HeadingTypes>(), {
-    size: "xl",
     weight: "bold",
     color: "primary",
 })

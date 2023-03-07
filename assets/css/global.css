@@ -99,3 +99,7 @@
 *{
     font-family: "Metropolitano", sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
