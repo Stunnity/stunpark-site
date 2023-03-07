@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex justify-between items-center">
+    <nav class="flex justify-between items-center bg-white py-4 px-6 rounded-full w-5/6 m-auto">
         <div><SLogo /></div>
         <ul class="flex space-x-5">
             <li class="text-sm text-primary"><NuxtLink to="#about"> About </NuxtLink></li>

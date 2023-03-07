@@ -14,6 +14,14 @@ const meta: Meta<typeof Input> = {
                 type: { summary: "select" },
             },
         },
+        placeholderColor: {
+            options: ["gray", "white"],
+            control: "select",
+            description: "Placeholder Color",
+            table: {
+                type: { summary: "select" },
+            },
+        },
         value: {
             control: "text",
             description: "Input Value",
