@@ -1,7 +1,7 @@
 <template>
     <div>
-        <main class="bg-primary px-4 md:px-0">
-            <header class="py-16">
+        <main class="bg-primary">
+            <header class="py-8 md:py-16 px-4 md:px-0">
                 <SNav>
                     <template #action>
                         <SButton>Get Started</SButton>
@@ -9,17 +9,17 @@
                 </SNav>
             </header>
             <section>
-                <div>
+                <div class="px-4 md:px-0">
                     <SHeading color="white" class="text-[2rem] md:text-[4rem] max-w-3xl leading-[2.4rem] md:leading-[5rem] m-auto text-center" weight="semibold">
                         Find and book a parking space easier.
                     </SHeading>
                 </div>
-                <div>
+                <div class="px-4 md:px-0">
                     <p class="max-w-2xl text-sm md:text-base text-center text-white m-auto py-4 leading-[18px]">
                         Our mobile app is designed to make finding and booking parking spaces quick and easy, so you can get on with your day without the hassle of searching for a spot.
                     </p>
                 </div>
-                <div>
+                <div class="px-4 md:px-0">
                     <div class="max-w-[22.375rem] mx-auto py-4">
                         <ActionInputWrapper class="bg-white/25">
                             <template #input>
@@ -32,7 +32,8 @@
                     </div>
                 </div>
                 <div>
-                    <img src="../assets/images/front-image-stunpark-mob-app.png" alt="stunpark mobile application" class="mx-auto" />
+                    <img src="../assets/images/front-image-stunpark-mob-app.png" alt="stunpark mobile application" class="mx-auto sm:hidden" />
+                    <img src="../assets/images/front-image-stunpark-mob-app-desktop.png" alt="stunpark mobile application" class="mx-auto hidden sm:block" />
                 </div>
             </section>
         </main>
@@ -40,27 +41,27 @@
             <div class="flex flex-col-reverse md:flex-row items-center md:space-x-[3.75rem]">
                 <div class="bg-primary max-w-[511px] rounded-[40px] pt-4">
                     <div class="p-[1.5rem] md:p-[2.5rem]">
-                        <SHeading class="text-[1.5rem] md:text-[2.5rem] leading-[3.063rem] font-semibold md:font-bold" color="white">Stress-free parking experience.</SHeading>
+                        <SHeading class="text-[1.5rem] md:text-[2.5rem] leading-[1.844rem] md:leading-[3.063rem] font-semibold md:font-bold" color="white">Stress-free parking experience.</SHeading>
                     </div>
                     <img src="../assets/images/stunpark-book-park-mobile-app-interface.png" alt="stunpark mobile app booking interface " class="mx-auto w-[20rem]" />
                 </div>
-                <div class="max-w-[560px]">
+                <div class="max-w-[560px] mb-10 md:mb-0">
                     <SHeading class="leading-[2.4rem] md:leading-[4.313rem] text-[2rem] md:text-[3.5rem] font-semibold md:font-bold">It’s all about a new parking experience.</SHeading>
-                    <p class="leading-[18px] text-sm md:text-base py-4">
+                    <p class="leading-[18px] text-sm md:text-base py-4 md:font-medium">
                         At Stunpark, we're passionate about making parking simple, convenient, and stress-free. We understand the frustration of searching for a parking spot, especially in busy urban
                         areas. That's why we created our mobile app - to help people find and book parking easily and quickly.
                     </p>
                 </div>
             </div>
         </main>
-        <main class="bg-secondary-light pt-[3.5rem] pb-[11.313rem] px-6 md:px-4" id="features">
+        <main class="bg-secondary-light pt-[3.5rem] pb-[11.313rem]" id="features">
             <div class="max-w-[1220px] m-auto">
-                <div>
+                <div class="px-6 md:px-4">
                     <div>
                         <SHeading class="leading-[2.4rem] md:leading-[4.313rem] text-[2rem] md:text-[3.5rem] text-center font-semibold md:font-bold" color="secondary"> Powerful features.</SHeading>
                     </div>
                     <div class="max-w-[659px] m-auto pb-[6.125rem]">
-                        <p class="leading-[18px] text-sm md:text-base py-4 text-center">
+                        <p class="leading-[18px] text-sm md:text-base py-4 text-center md:font-medium">
                             Our mission is to provide a hassle-free parking experience for everyone. Whether you're a busy commuter, a tourist exploring a new city, or just looking for a convenient
                             spot to park, our mobile app has the best features to get you covered. We believe that everyone deserves a stress-free parking experience, and that's exactly what we aim to
                             provide.
@@ -70,7 +71,7 @@
                 <div class="md:grid md:grid-cols-4">
                     <div class="col-span-2 md:hidden"><img class="w-[20rem]" src="../assets/images/stunpark-mob-app-payment-page.png" alt="stunpark mobile application payment page" /></div>
 
-                    <div class="gap-y-6 md:gap-0 grid grid-rows-4">
+                    <div class="gap-y-6 md:gap-4 grid grid-rows-4 px-6 md:px-4">
                         <div>
                             <SIconHolder>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +82,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Booking Parking Slots </SHeading>
-                            <p class="text-sm">A car owner can reserve a parking space at a particular park.</p>
+                            <p class="text-sm md:font-medium">A car owner can reserve a parking space at a particular park.</p>
                         </div>
                         <div>
                             <SIconHolder>
@@ -101,7 +102,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Locating and getting directions to a park </SHeading>
-                            <p class="text-sm">A car owner can get directions to the desired parking through our app.</p>
+                            <p class="text-sm md:font-medium">A car owner can get directions to the desired parking through our app.</p>
                         </div>
                         <div>
                             <SIconHolder>
@@ -117,7 +118,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> StunCard </SHeading>
-                            <p class="text-sm">A storage of money for paying parking charges and also a pass allowing one to get in and out of the parks.</p>
+                            <p class="text-sm md:font-medium">A storage of money for paying parking charges and also a pass allowing one to get in and out of the parks.</p>
                         </div>
                         <div>
                             <SIconHolder>
@@ -129,11 +130,11 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Tracking parking slots availability </SHeading>
-                            <p class="text-sm">The user will be able to view the number of parking slots available at a desired parking.</p>
+                            <p class="text-sm md:font-medium">The user will be able to view the number of parking slots available at a desired parking.</p>
                         </div>
                     </div>
-                    <div class="col-span-2 hidden md:block"><img src="../assets/images/stunpark-mob-app-payment-page.png" alt="stunpark mobile application payment page" /></div>
-                    <div class="gap-y-6 md:gap-0 grid grid-rows-4">
+                    <div class="col-span-2 hidden md:block px-6 md:px-4"><img src="../assets/images/stunpark-mob-app-payment-page-desktop.png" alt="stunpark mobile application payment page" /></div>
+                    <div class="gap-y-6 md:gap-4 grid grid-rows-4 px-6 md:px-4">
                         <div>
                             <SIconHolder>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +149,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Statistical Information </SHeading>
-                            <p class="text-sm">We shall provide detailed statistical information to park owners.</p>
+                            <p class="text-sm md:font-medium">We shall provide detailed statistical information to park owners.</p>
                         </div>
                         <div>
                             <SIconHolder>
@@ -164,7 +165,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Notifications </SHeading>
-                            <p class="text-sm">We shall provide instant notifications suggesting nearby parks with available slots.</p>
+                            <p class="text-sm md:font-medium">We shall provide instant notifications suggesting nearby parks with available slots.</p>
                         </div>
                         <div>
                             <SIconHolder>
@@ -184,7 +185,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Requesting a park </SHeading>
-                            <p class="text-sm">Our users will have an option to request a parking in a given location through the mobile app.</p>
+                            <p class="text-sm md:font-medium">Our users will have an option to request a parking in a given location through the mobile app.</p>
                         </div>
                         <div>
                             <SIconHolder>
@@ -200,7 +201,7 @@
                                 </svg>
                             </SIconHolder>
                             <SHeading class="tex-[18px] py-2 leading-6 tracking-[0.02em]" color="secondary"> Instant Payment </SHeading>
-                            <p class="text-sm">The user will be able to pay the parking charges via StunCard or our mobile app</p>
+                            <p class="text-sm md:font-medium">The user will be able to pay the parking charges via StunCard or our mobile app</p>
                         </div>
                     </div>
                 </div>
@@ -266,7 +267,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="border-t-2 border-t-white/20"><p class="pb-[3.125rem] pt-[1.5rem] text-white">© 2022 . Copyright, All Rights are reserved</p></div>
+                <div class="border-t-2 border-t-white/20"><p class="pb-[3.125rem] pt-[1.5rem] text-sm md:text-base text-white">© 2022 . Copyright, All Rights are reserved</p></div>
             </div>
         </footer>
     </div>
