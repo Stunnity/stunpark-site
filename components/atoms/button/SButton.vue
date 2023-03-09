@@ -18,8 +18,8 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 const styles = computed(() => {
     let s = "text-sm"
 
-    if (props.appearance == "primary") s += ` bg-primary text-white py-4 px-6`
-    else if (props.appearance == "secondary") s += ` bg-white text-black py-4 px-6`
+    if (props.appearance == "primary") s += ` bg-primary text-white py-3 px-6`
+    else if (props.appearance == "secondary") s += ` bg-white text-black py-3 px-6`
     else if (props.appearance == "text") s += ` `
 
     if (props.width == "full") s += ` w-full`

@@ -26,7 +26,7 @@
                                 <SInput placeholder-color="white" placeholder="Email Adress" :border="false" />
                             </template>
                             <template #action>
-                                <SButton rounded="full" appearance="secondary">Get Started</SButton>
+                                <SButton rounded="full" appearance="secondary" class="font-medium">Get Started</SButton>
                             </template>
                         </ActionInputWrapper>
                     </div>
