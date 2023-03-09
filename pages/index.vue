@@ -1,6 +1,6 @@
 <template>
     <div>
-        <main class="bg-primary">
+        <main class="bg-primary px-4 md:px-0">
             <header class="py-16">
                 <SNav>
                     <template #action>
@@ -9,9 +9,13 @@
                 </SNav>
             </header>
             <section>
-                <div><SHeading color="white" class="text-[4rem] max-w-3xl leading-[5rem] m-auto text-center" weight="semibold"> Find and book a parking space easier. </SHeading></div>
                 <div>
-                    <p class="max-w-2xl text-center text-white m-auto py-4 leading-[18px]">
+                    <SHeading color="white" class="text-[2rem] md:text-[4rem] max-w-3xl leading-[2.4rem] md:leading-[5rem] m-auto text-center" weight="semibold">
+                        Find and book a parking space easier.
+                    </SHeading>
+                </div>
+                <div>
+                    <p class="max-w-2xl text-sm md:text-base text-center text-white m-auto py-4 leading-[18px]">
                         Our mobile app is designed to make finding and booking parking spaces quick and easy, so you can get on with your day without the hassle of searching for a spot.
                     </p>
                 </div>
@@ -32,35 +36,41 @@
                 </div>
             </section>
         </main>
-        <main class="pt-[20.813rem] pb-[9.375rem] flex justify-center" id="about">
-            <div class="flex items-center space-x-[3.75rem]">
+        <main class="pt-[8rem] md:pt-[20.813rem] pb-[4rem] md:pb-[9.375rem] flex justify-center px-6 md:px-4" id="about">
+            <div class="flex flex-col-reverse md:flex-row items-center md:space-x-[3.75rem]">
                 <div class="bg-primary max-w-[511px] rounded-[40px] pt-4">
-                    <div class="p-[2.5rem]"><SHeading class="text-[2.5rem] leading-[3.063rem]" color="white">Stress-free parking experience.</SHeading></div>
-                    <img src="../assets/images/stunpark-book-park-mobile-app-interface.png" alt="stunpark mobile app booking interface " class="mx-auto" />
+                    <div class="p-[1.5rem] md:p-[2.5rem]">
+                        <SHeading class="text-[1.5rem] md:text-[2.5rem] leading-[3.063rem] font-semibold md:font-bold" color="white">Stress-free parking experience.</SHeading>
+                    </div>
+                    <img src="../assets/images/stunpark-book-park-mobile-app-interface.png" alt="stunpark mobile app booking interface " class="mx-auto w-[20rem]" />
                 </div>
                 <div class="max-w-[560px]">
-                    <SHeading class="leading-[4.313rem] text-[3.5rem]">It’s all about a new parking experience.</SHeading>
-                    <p class="leading-[18px] py-4">
+                    <SHeading class="leading-[2.4rem] md:leading-[4.313rem] text-[2rem] md:text-[3.5rem] font-semibold md:font-bold">It’s all about a new parking experience.</SHeading>
+                    <p class="leading-[18px] text-sm md:text-base py-4">
                         At Stunpark, we're passionate about making parking simple, convenient, and stress-free. We understand the frustration of searching for a parking spot, especially in busy urban
                         areas. That's why we created our mobile app - to help people find and book parking easily and quickly.
                     </p>
                 </div>
             </div>
         </main>
-        <main class="bg-secondary-light pt-[3.5rem] pb-[11.313rem]" id="features">
+        <main class="bg-secondary-light pt-[3.5rem] pb-[11.313rem] px-6 md:px-4" id="features">
             <div class="max-w-[1220px] m-auto">
                 <div>
-                    <div><SHeading class="leading-[4.313rem] text-[3.5rem] text-center" color="secondary"> Powerful features.</SHeading></div>
+                    <div>
+                        <SHeading class="leading-[2.4rem] md:leading-[4.313rem] text-[2rem] md:text-[3.5rem] text-center font-semibold md:font-bold" color="secondary"> Powerful features.</SHeading>
+                    </div>
                     <div class="max-w-[659px] m-auto pb-[6.125rem]">
-                        <p class="leading-[18px] py-4 text-center">
+                        <p class="leading-[18px] text-sm md:text-base py-4 text-center">
                             Our mission is to provide a hassle-free parking experience for everyone. Whether you're a busy commuter, a tourist exploring a new city, or just looking for a convenient
                             spot to park, our mobile app has the best features to get you covered. We believe that everyone deserves a stress-free parking experience, and that's exactly what we aim to
                             provide.
                         </p>
                     </div>
                 </div>
-                <div class="grid grid-cols-4">
-                    <div class="grid grid-rows-4">
+                <div class="md:grid md:grid-cols-4">
+                    <div class="col-span-2 md:hidden"><img class="w-[20rem]" src="../assets/images/stunpark-mob-app-payment-page.png" alt="stunpark mobile application payment page" /></div>
+
+                    <div class="gap-y-6 md:gap-0 grid grid-rows-4">
                         <div>
                             <SIconHolder>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,8 +132,8 @@
                             <p class="text-sm">The user will be able to view the number of parking slots available at a desired parking.</p>
                         </div>
                     </div>
-                    <div class="col-span-2"><img src="../assets/images/stunpark-mob-app-payment-page.png" alt="stunpark mobile application payment page" /></div>
-                    <div class="grid grid-rows-4">
+                    <div class="col-span-2 hidden md:block"><img src="../assets/images/stunpark-mob-app-payment-page.png" alt="stunpark mobile application payment page" /></div>
+                    <div class="gap-y-6 md:gap-0 grid grid-rows-4">
                         <div>
                             <SIconHolder>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,44 +206,44 @@
                 </div>
             </div>
         </main>
-        <footer class="bg-primary">
+        <footer class="bg-primary px-6 md:px-4">
             <div class="max-w-[1220px] m-auto">
-                <div class="grid grid-cols-2 justify-between pt-[7.625rem] pb-[4.375rem]">
+                <div class="md:grid md:grid-cols-2 justify-between pt-[1rem] md:pt-[7.625rem] pb-[1rem] md:pb-[4.375rem]">
                     <div class="max-w-[445px] flex-1">
-                        <SHeading color="white" class="text-[88px] leading-[108px]" weight="semibold">Let’s have a chat.</SHeading>
-                        <div class="flex text-white space-x-8 pt-[2.563rem]">
-                            <a class="flex space-x-2 items-center">
-                                <span class="border-2 border-b-white p-2 rounded-full"
+                        <SHeading color="white" class="text-[2rem] md:text-[88px] md:leading-[108px]" weight="semibold">Let’s have a chat.</SHeading>
+                        <div class="flex text-white md:space-x-8 md:pt-[2.563rem]">
+                            <a class="md:scale-0 flex md:space-x-2 items-center justify-start" href="https://twitter.com/stun_park" target="_blank">
+                                <span class="scale-50 border-2 border-b-white p-2 rounded-full"
                                     ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
-                                <span class="text-lg">Twitter</span>
+                                <span class="">Twitter</span>
                             </a>
-                            <a class="flex space-x-2 items-center">
-                                <span class="border-2 border-b-white p-2 rounded-full"
+                            <a class="md:scale-0 flex md:space-x-2 items-center" href="" target="_blank">
+                                <span class="scale-50 border-2 border-b-white p-2 rounded-full"
                                     ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
-                                <span class="text-lg">Twitter</span>
+                                <span class="">Linkedin</span>
                             </a>
-                            <a class="flex space-x-2 items-center">
-                                <span class="border-2 border-b-white p-2 rounded-full"
+                            <a class="md:scale-0 flex md:space-x-2 items-center" href="mailto:stunnity.co@gmail.com" target="_blank">
+                                <span class="scale-50 border-2 border-b-white p-2 rounded-full"
                                     ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
-                                <span class="text-lg">Twitter</span>
+                                <span class="">Mail</span>
                             </a>
                         </div>
                     </div>
-                    <form class="flex-1">
-                        <div class="flex space-x-2">
+                    <form class="flex-1 pt-10 md:pt-0">
+                        <div class="space-y-4 md:flex md:space-x-2">
                             <SInput required class="placeholder-white" type="text" placeholder="Name" />
                             <SInput required placeholder-color="white" type="email" placeholder="Email Address" />
                         </div>
-                        <div class="pt-12">
+                        <div class="pt-4 md:pt-12">
                             <STextArea required rows="4" placeholder="Message" class="resize-none placeholder-white" />
                         </div>
                         <div class="py-2">
