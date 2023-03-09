@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center space-x-1">
-        <img src="../../../assets/images/logo.png" alt="logo" />
+        <nuxt-img src="logo.webp" alt="logo" />
         <h5 class="text-primary">StunPark</h5>
     </div>
 </template>

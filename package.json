@@ -14,6 +14,7 @@
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
     "@nuxt/test-utils": "^3.2.3",
     "@nuxtjs/tailwindcss": "^6.4.1",
     "@storybook/addon-a11y": "^7.0.0-beta.56",
@@ -43,6 +44,7 @@
     "eslint-plugin-vue": "^8.7.1",
     "jsdom": "^21.1.0",
     "nuxt": "^3.2.2",
+    "nuxt-og-image": "^1.5.2",
     "prettier": "^2.5.0",
     "prettier-eslint": "^15.0.1",
     "react": "^18.2.0",

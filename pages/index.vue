@@ -32,8 +32,8 @@
                     </div>
                 </div>
                 <div>
-                    <img src="../assets/images/front-image-stunpark-mob-app.png" alt="stunpark mobile application" class="mx-auto sm:hidden" />
-                    <img src="../assets/images/front-image-stunpark-mob-app-desktop.png" alt="stunpark mobile application" class="mx-auto hidden sm:block" />
+                    <nuxt-img loading="lazy" src="front-image-stunpark-mob-app.webp" alt="stunpark mobile application" class="mx-auto sm:hidden" />
+                    <nuxt-img loading="lazy" src="front-image-stunpark-mob-app-desktop.webp" alt="stunpark mobile application" class="mx-auto hidden sm:block" />
                 </div>
             </section>
         </main>
@@ -43,7 +43,7 @@
                     <div class="p-[1.5rem] md:p-[2.5rem]">
                         <SHeading class="text-[1.5rem] md:text-[2.5rem] leading-[1.844rem] md:leading-[3.063rem] font-semibold md:font-bold" color="white">Stress-free parking experience.</SHeading>
                     </div>
-                    <img src="../assets/images/stunpark-book-park-mobile-app-interface.png" alt="stunpark mobile app booking interface " class="mx-auto w-[20rem]" />
+                    <nuxt-img loading="lazy" src="stunpark-book-park-mobile-app-interface.webp" alt="stunpark mobile app booking interface " class="mx-auto w-[20rem]" />
                 </div>
                 <div class="max-w-[560px] mb-10 md:mb-0">
                     <SHeading class="leading-[2.4rem] md:leading-[4.313rem] text-[2rem] md:text-[3.5rem] font-semibold md:font-bold">It’s all about a new parking experience.</SHeading>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-4">
-                    <div class="col-span-2 md:hidden"><img class="w-[20rem]" src="../assets/images/stunpark-mob-app-payment-page.png" alt="stunpark mobile application payment page" /></div>
+                    <div class="col-span-2 md:hidden"><nuxt-img loading="lazy" class="w-[20rem]" src="stunpark-mob-app-payment-page.webp" alt="stunpark mobile application payment page" /></div>
 
                     <div class="gap-y-6 md:gap-4 grid grid-rows-4 px-6 md:px-4">
                         <div>
@@ -133,7 +133,9 @@
                             <p class="text-sm md:font-medium">The user will be able to view the number of parking slots available at a desired parking.</p>
                         </div>
                     </div>
-                    <div class="col-span-2 hidden md:block px-6 md:px-4"><img src="../assets/images/stunpark-mob-app-payment-page-desktop.png" alt="stunpark mobile application payment page" /></div>
+                    <div class="col-span-2 hidden md:block px-6 md:px-4">
+                        <nuxt-img loading="lazy" src="stunpark-mob-app-payment-page-desktop.webp" alt="stunpark mobile application payment page" />
+                    </div>
                     <div class="gap-y-6 md:gap-4 grid grid-rows-4 px-6 md:px-4">
                         <div>
                             <SIconHolder>
@@ -221,7 +223,7 @@
                                 </span>
                                 <span class="">Twitter</span>
                             </a>
-                            <a class="md:scale-0 flex md:space-x-2 items-center" href="" target="_blank">
+                            <a class="md:scale-0 flex md:space-x-2 items-center" href="https://twitter.com/stun_park" target="_blank">
                                 <span class="scale-50 border-2 border-b-white p-2 rounded-full"
                                     ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
