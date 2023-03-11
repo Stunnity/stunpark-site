@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@nuxt/image-edge': 1.0.0-27968280.9739e4d
   '@nuxt/test-utils': ^3.2.3
+  '@nuxtjs/robots': ^3.0.0
   '@nuxtjs/tailwindcss': ^6.4.1
   '@storybook/addon-a11y': ^7.0.0-beta.56
   '@storybook/addon-actions': ^7.0.0-beta.56
@@ -18,10 +19,12 @@ specifiers:
   '@storybook/vue3-vite': ^7.0.0-beta.56
   '@typescript-eslint/eslint-plugin': ^5.54.0
   '@typescript-eslint/parser': ^5.54.0
+  '@vercel/analytics': ^0.1.11
   '@vitejs/plugin-vue': ^4.0.0
   '@vitest/ui': ^0.29.2
   '@vue/eslint-config-typescript': ^11.0.2
   '@vue/test-utils': ^2.3.0
+  add: ^2.0.6
   eslint: ^8.35.0
   eslint-config-prettier: ^8.6.0
   eslint-plugin-markdown: ^2.2.1
@@ -43,9 +46,13 @@ specifiers:
   vitest: ^0.29.2
   vue-eslint-parser: ^9.1.0
 
+dependencies:
+  '@vercel/analytics': 0.1.11_react@18.2.0
+
 devDependencies:
   '@nuxt/image-edge': 1.0.0-27968280.9739e4d
   '@nuxt/test-utils': 3.2.3
+  '@nuxtjs/robots': 3.0.0
   '@nuxtjs/tailwindcss': 6.4.1
   '@storybook/addon-a11y': 7.0.0-beta.56_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-actions': 7.0.0-beta.56_biqbaboplfbrettd7655fr4n2y
@@ -65,6 +72,7 @@ devDependencies:
   '@vitest/ui': 0.29.2
   '@vue/eslint-config-typescript': 11.0.2_cqlzbvkd7tsnhh7dnbyvbitujq
   '@vue/test-utils': 2.3.0
+  add: 2.0.6
   eslint: 8.35.0
   eslint-config-prettier: 8.6.0_eslint@8.35.0
   eslint-plugin-markdown: 2.2.1_eslint@8.35.0
@@ -2477,7 +2485,7 @@ packages:
     resolution: {integrity: sha512-FOsfC0i6Ix66M/ZlWV/095JIdfnRR9CRbFvBSpojt2CpbwU1pGMbRiicwYg2f1Wf27LXQRNpNn1OczruBfEWag==}
     hasBin: true
     dependencies:
-      '@nuxt/kit': 3.2.2
+      '@nuxt/kit': 3.2.3
       chalk: 5.2.0
       ci-info: 3.8.0
       consola: 2.15.3
@@ -2583,6 +2591,16 @@ packages:
       - vls
       - vti
       - vue-tsc
+    dev: true
+
+  /@nuxtjs/robots/3.0.0:
+    resolution: {integrity: sha512-qsHGW1KXBvV5Kq7u3huPnFCUTbHS4Fk8Za2mNPgmUXcwLgp3exvhPtdZfIdjrCF/aZk3A8OZONNmGghs6CecBA==}
+    dependencies:
+      '@nuxt/kit': 3.2.3
+      h3: 1.5.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@nuxtjs/tailwindcss/6.4.1:
@@ -4578,6 +4596,14 @@ packages:
       vue: 3.2.47
     dev: true
 
+  /@vercel/analytics/0.1.11_react@18.2.0:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@vercel/nft/0.22.6:
     resolution: {integrity: sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==}
     engines: {node: '>=14'}
@@ -5047,6 +5073,10 @@ packages:
     resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
+
+  /add/2.0.6:
+    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
     dev: true
 
   /address/1.2.2:
@@ -9710,7 +9740,6 @@ packages:
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: true
 
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -10253,7 +10282,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: true
 
   /loupe/2.3.6:
     resolution: {integrity: sha512-RaPMZKiMy8/JruncMU5Bt6na1eftNoo++R4Y+N2FrxkDVTrGvcyzFTsaGif4QTeKESheMGegbhw6iUAq+5A8zA==}
@@ -13118,7 +13146,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

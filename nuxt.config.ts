@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             charset: "utf-16",
-            viewport: "width=500, initial-scale=1",
+            viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
             title: "Stunpark Mobile App | Hassle-Free Parking Experience",
             meta: [
                 // <meta name="description" content="My amazing site">
@@ -31,9 +31,10 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    modules: ["@nuxtjs/tailwindcss", "vite-plugin-vue-type-imports/nuxt", "@nuxt/image-edge", "nuxt-og-image"],
+    plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
     image: {},
     routeRules: {
         "/*": { headers: { "Cache-Control": "max-age=31536000" } },
     },
+    modules: ["@nuxtjs/tailwindcss", "vite-plugin-vue-type-imports/nuxt", "@nuxt/image-edge", "nuxt-og-image", "@nuxtjs/robots"],
 })
