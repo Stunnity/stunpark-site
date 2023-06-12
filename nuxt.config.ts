@@ -19,6 +19,11 @@ export default defineNuxtConfig({
                     content:
                         "Stunpark is a mobile app designed to make finding and booking parking spaces quick and easy. Our app offers powerful features such as booking parking slots, getting directions to parks, and tracking parking slot availability.",
                 },
+                // <meta name="google-site-verification" content="F-K8WserHU9qpdq-yxRVNY0h_X4If_ou_jzfK2OtiZk" />
+                {
+                    name: "google-site-verification",
+                    content: "F-K8WserHU9qpdq-yxRVNY0h_X4If_ou_jzfK2OtiZk",
+                },
             ],
             htmlAttrs: {
                 lang: "en",
