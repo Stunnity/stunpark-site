@@ -1,6 +1,6 @@
 import { ButtonProps } from './SButton.types';
 <template>
-    <button :class="styles">
+    <button :class="styles" v-bind="$attrs">
         <slot />
     </button>
 </template>
