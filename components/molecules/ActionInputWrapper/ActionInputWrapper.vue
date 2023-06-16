@@ -1,6 +1,14 @@
+<script lang="ts" setup>
+const emit = defineEmits(["submit"])
+
+function submit(e: Event) {
+    e.preventDefault()
+    emit("submit")
+}
+</script>
 <template>
-    <div class="flex border-2 border-white rounded-full p-2 items-center">
+    <form class="flex border-2 border-white rounded-full p-2 items-center" @submit="submit">
         <div class="pl-4 pr-2 flex-1"><slot name="input" /></div>
         <div><slot name="action" /></div>
-    </div>
+    </form>
 </template>
