@@ -20,6 +20,7 @@ const styles = computed(() => {
 
     if (props.appearance == "primary") s += ` bg-primary text-white py-3 px-6`
     else if (props.appearance == "secondary") s += ` bg-white text-black py-3 px-6`
+    else if (props.appearance == "secondary-primary") s += ` bg-white text-primary py-3 px-6`
     else if (props.appearance == "text") s += ` `
 
     if (props.width == "full") s += ` w-full`
