@@ -1,13 +1,10 @@
-<template>
-    <textarea :class="inputClasses" :value="value" @input="$emit('update:modelValue', $event!.target!.value)" :placeholder="props.placeholder"></textarea>
-</template>
-
 <script setup lang="ts">
 import { computed } from "vue"
 import { TextAreaProps } from "./STextArea.types"
 
+const modelValue = defineModel<string>()
+
 const props = withDefaults(defineProps<TextAreaProps>(), {
-    value: "",
     error: false,
     color: "white",
     placeholder: "textarea",
@@ -23,3 +20,7 @@ const inputClasses = computed(() => {
     return classes
 })
 </script>
+
+<template>
+    <textarea :class="inputClasses" :placeholder="props.placeholder" v-model="modelValue"></textarea>
+</template>

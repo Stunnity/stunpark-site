@@ -1,14 +1,13 @@
 <template>
-    <input v-bind="$attrs" :class="inputClasses" v-model="value" />
+    <input v-bind="$attrs" :class="inputClasses" v-model="modelValue" />
 </template>
 <script setup lang="ts">
 import { computed } from "vue"
 import { InputProps } from "./SInput.types"
 
-const value = defineModel()
+const modelValue = defineModel<string>()
 
 const props = withDefaults(defineProps<InputProps>(), {
-    value: "",
     error: false,
     color: "white",
     placeholderColor: "gray",
