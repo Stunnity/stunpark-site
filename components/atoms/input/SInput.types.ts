@@ -1,7 +1,7 @@
 export interface InputProps {
-    value: string
+    value?: string
     error?: boolean
-    color: "white" | "black"
+    color?: "white" | "black"
     border?: boolean
     placeholderColor?: "gray" | "white"
 }

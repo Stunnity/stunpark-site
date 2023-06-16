@@ -1,9 +1,11 @@
 <template>
-    <input v-bind="$attrs" :class="inputClasses" :value="value" @input="$emit('update:value', $event!.target!.value)" />
+    <input v-bind="$attrs" :class="inputClasses" v-model="value" />
 </template>
 <script setup lang="ts">
 import { computed } from "vue"
 import { InputProps } from "./SInput.types"
+
+const value = defineModel()
 
 const props = withDefaults(defineProps<InputProps>(), {
     value: "",
