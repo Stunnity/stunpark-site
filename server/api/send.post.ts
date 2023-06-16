@@ -1,11 +1,32 @@
 import { Resend } from "resend"
+import { createClient } from "@supabase/supabase-js"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
 
+    let supabase
+
+    const supabaseUrl = process.env.SUPABASE_URL
+    const supabaseKey = process.env.SUPABASE_KEY
+
+    // verify that the email is available
+    if (body.email === undefined) {
+        setResponseStatus(event, 400)
+        return { error: "Email not found" }
+    }
+
+    // verify that the supabase credentials are available
+    if (supabaseUrl && supabaseKey) {
+        supabase = createClient(supabaseUrl, supabaseKey)
+    } else {
+        setResponseStatus(event, 400)
+        return { error: "Supabase credentials not found" }
+    }
+
     try {
+        // send the email
         const data = await resend.emails.send({
             from: "liberintwari@gmail.com",
             to: body.email,
@@ -23,8 +44,18 @@ export default defineEventHandler(async (event) => {
             `,
         })
 
+        // insert the email into the database
+        const { error } = await supabase.from("private_beta").insert({ email: body.email, receive_updates: body.receive_updates ?? false })
+
+        // if there was an error inserting the email into the database, return the error
+        if (error) {
+            setResponseStatus(event, 400)
+            return { error }
+        }
         return data
     } catch (error) {
+        // if there was an error sending the email, return the error
+        setResponseStatus(event, 400)
         return { error }
     }
 })
