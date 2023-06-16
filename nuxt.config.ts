@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    experimental: {
-        typedPages: true,
-    },
+    // experimental: {
+    //     typedPages: true,
+    // },
 
     runtimeConfig: {
         public: {
@@ -53,5 +53,13 @@ export default defineNuxtConfig({
 
     devtools: {
         enabled: true,
+    },
+    vite: {
+        vue: {
+            script: {
+                defineModel: true,
+                propsDestructure: true,
+            },
+        },
     },
 })
