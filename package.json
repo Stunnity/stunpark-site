@@ -11,7 +11,8 @@
     "lint:js": "eslint src --ext .ts,.vue",
     "test:ui": "vitest --ui",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "clean": "rm -rf .nuxt storybook-static coverage .output dist"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.6.1",
@@ -63,6 +64,8 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@vercel/analytics": "^0.1.11"
+    "@supabase/supabase-js": "^2.25.0",
+    "@vercel/analytics": "^0.1.11",
+    "resend": "^0.15.2"
   }
 }

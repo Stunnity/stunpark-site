@@ -1,32 +1,64 @@
+<script setup lang="ts">
+const email = ref("sadfasafd")
+
+const {
+    data,
+    execute: registerEmail,
+    pending,
+    error,
+} = await useAsyncData(
+    () =>
+        $fetch("/api/send", {
+            method: "POST",
+            body: {
+                email: email.value,
+            },
+        }),
+    {
+        immediate: false,
+    }
+)
+
+function register() {
+    registerEmail()
+}
+</script>
+
 <template>
     <div>
-        <main class="bg-primary">
+        <main class="bg-[url('/heroImage.png')]">
             <header class="py-8 md:py-16 px-4 md:px-0">
                 <SNav>
                     <template #action>
-                        <SButton>Get Started</SButton>
+                        <SButton>Join Private Beta</SButton>
                     </template>
                 </SNav>
             </header>
             <section>
                 <div class="px-4 md:px-0">
                     <SHeading color="white" class="text-[2rem] md:text-[4rem] max-w-3xl leading-[2.4rem] md:leading-[5rem] m-auto text-center" weight="semibold">
-                        Find and book a parking space easier.
+                        Join our private beta testing Program for StunPark
                     </SHeading>
                 </div>
                 <div class="px-4 md:px-0">
                     <p class="max-w-2xl text-sm md:text-base text-center text-white m-auto py-4 leading-[18px]">
-                        Our mobile app is designed to make finding and booking parking spaces quick and easy, so you can get on with your day without the hassle of searching for a spot.
+                        Be among the first to experience the future of StunPark by joining our exclusive private beta testing community. As a private beta user, you'll have the unique opportunity to
+                        explore our groundbreaking features, provide valuable feedback, and help shape the future of our app.
                     </p>
                 </div>
                 <div class="px-4 md:px-0">
                     <div class="max-w-[22.375rem] mx-auto py-4">
-                        <ActionInputWrapper class="bg-white/25">
+                        <div>
+                            <div>pending : {{ pending }}</div>
+                            <div>data: {{ data }}</div>
+                            <div>error: {{ error }}</div>
+                        </div>
+                        <ActionInputWrapper class="bg-white/25" @submit="register">
                             <template #input>
-                                <SInput placeholder-color="white" placeholder="Email Adress" :border="false" />
+                                <SInput placeholder-color="white" required type="email" placeholder="Email Address" :border="false" v-model="email" />
                             </template>
                             <template #action>
-                                <SButton rounded="full" appearance="secondary" class="font-medium">Get Started</SButton>
+                                <SButton rounded="full" type="submit" appearance="secondary-primary" class="font-medium"> Join Private Beta </SButton>
                             </template>
                         </ActionInputWrapper>
                     </div>
