@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 })
 
 const styles = computed(() => {
-    let s = "text-sm"
+    let s = "text-sm disabled:opacity-75 disabled:cursor-not-allowed transition-all"
 
     if (props.appearance == "primary") s += ` bg-primary text-white py-3 px-6`
     else if (props.appearance == "secondary") s += ` bg-white text-black py-3 px-6`

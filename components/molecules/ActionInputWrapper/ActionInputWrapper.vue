@@ -2,9 +2,7 @@
 const emit = defineEmits(["submit"])
 
 function submit(e: Event) {
-    console.log(e)
     e.preventDefault()
-    alert("submit")
     emit("submit")
 }
 </script>

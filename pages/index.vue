@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const email = ref("sadfasafd")
+const email = ref("")
+const showMessage = ref(false)
 
 const {
     data,
@@ -20,7 +21,11 @@ const {
 )
 
 function register() {
+    showMessage.value = true
     registerEmail()
+    setTimeout(() => {
+        showMessage.value = false
+    }, 4000)
 }
 </script>
 
@@ -48,17 +53,16 @@ function register() {
                 </div>
                 <div class="px-4 md:px-0">
                     <div class="max-w-[30rem] mx-auto py-4">
-                        <div>
-                            <div>pending : {{ pending }}</div>
-                            <div>data: {{ data }}</div>
-                            <div>error: {{ error }}</div>
+                        <div v-if="showMessage" class="text-white px-2">
+                            <span v-if="data">✅ Added to List!</span>
+                            <span v-else-if="error">❌ Something went wrong</span>
                         </div>
                         <ActionInputWrapper class="bg-white/25" @submit="register">
                             <template #input>
                                 <SInput placeholder-color="white" name="email" required type="email" placeholder="Email Address" :border="false" v-model="email" />
                             </template>
                             <template #action>
-                                <SButton rounded="full" type="submit" appearance="secondary-primary" class="font-medium"> Join Private Beta </SButton>
+                                <SButton :disabled="!!pending && !data" rounded="full" type="submit" appearance="secondary-primary" class="font-medium"> Join Private Beta </SButton>
                             </template>
                         </ActionInputWrapper>
                     </div>
