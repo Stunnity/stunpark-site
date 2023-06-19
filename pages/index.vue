@@ -20,6 +20,8 @@ const {
     }
 )
 
+pending.value = false
+
 function register() {
     showMessage.value = true
     registerEmail()
@@ -62,7 +64,7 @@ function register() {
                                 <SInput placeholder-color="white" name="email" required type="email" placeholder="Email Address" :border="false" v-model="email" />
                             </template>
                             <template #action>
-                                <SButton :disabled="!!pending && !data" rounded="full" type="submit" appearance="secondary-primary" class="font-medium"> Join Private Beta </SButton>
+                                <SButton :disabled="pending" rounded="full" type="submit" appearance="secondary-primary" class="font-medium"> Join Private Beta </SButton>
                             </template>
                         </ActionInputWrapper>
                     </div>
