@@ -26,6 +26,16 @@ export default defineEventHandler(async (event) => {
         return { error: "Supabase credentials not found" }
     }
 
+    const { data: exists, error: ExistsError } = await supabase.from("private_beta").select("*").eq("email", body.email)
+
+    if (ExistsError) {
+        setResponseStatus(event, 400)
+        return { error: ExistsError }
+    } else if (exists.length > 0) {
+        setResponseStatus(event, 200)
+        return { error: "Email already exists" }
+    }
+
     try {
         // send the email
         const data = await resend.emails.send({

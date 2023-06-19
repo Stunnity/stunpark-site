@@ -36,18 +36,18 @@ function register() {
             </header>
             <section>
                 <div class="px-4 md:px-0">
-                    <SHeading color="white" class="text-[2rem] md:text-[4rem] max-w-3xl leading-[2.4rem] md:leading-[5rem] m-auto text-center" weight="semibold">
+                    <SHeading color="white" class="text-[2rem] md:text-[4rem] max-w-[66.625rem] leading-[2.4rem] md:leading-[5rem] m-auto text-center" weight="semibold">
                         Join our private beta testing Program for StunPark
                     </SHeading>
                 </div>
                 <div class="px-4 md:px-0">
-                    <p class="max-w-2xl text-sm md:text-base text-center text-white m-auto py-4 leading-[18px]">
+                    <p class="max-w-[66.625rem] text-sm md:text-base text-center text-white m-auto py-4 leading-[18px]">
                         Be among the first to experience the future of StunPark by joining our exclusive private beta testing community. As a private beta user, you'll have the unique opportunity to
                         explore our groundbreaking features, provide valuable feedback, and help shape the future of our app.
                     </p>
                 </div>
                 <div class="px-4 md:px-0">
-                    <div class="max-w-[22.375rem] mx-auto py-4">
+                    <div class="max-w-[30rem] mx-auto py-4">
                         <div>
                             <div>pending : {{ pending }}</div>
                             <div>data: {{ data }}</div>
@@ -55,7 +55,7 @@ function register() {
                         </div>
                         <ActionInputWrapper class="bg-white/25" @submit="register">
                             <template #input>
-                                <SInput placeholder-color="white" required type="email" placeholder="Email Address" :border="false" v-model="email" />
+                                <SInput placeholder-color="white" name="email" required type="email" placeholder="Email Address" :border="false" v-model="email" />
                             </template>
                             <template #action>
                                 <SButton rounded="full" type="submit" appearance="secondary-primary" class="font-medium"> Join Private Beta </SButton>

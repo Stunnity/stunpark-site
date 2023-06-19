@@ -1,4 +1,4 @@
- const waitlistEmail = `
+const waitlistEmail = `
 <html>
 
 <head>
@@ -103,4 +103,4 @@ color: #FFFFFF;
 </html>
 `
 
-export {waitlistEmail}
+export { waitlistEmail }
