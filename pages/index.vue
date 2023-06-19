@@ -33,7 +33,7 @@ function register() {
 
 <template>
     <div>
-        <main class="bg-[url('/heroImage.png')]">
+        <main class="bg-[url('/heroImage.webp')]">
             <header class="py-8 md:py-16 px-4 md:px-0">
                 <SNav>
                     <template #action>
