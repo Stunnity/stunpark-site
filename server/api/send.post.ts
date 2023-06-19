@@ -41,7 +41,7 @@ export default defineEventHandler(async (event) => {
         const data = await resend.emails.send({
             from: "beta@stunpark.com",
             to: body.email,
-            subject: "Welcome to StunPark - Revolutionizing Your Parking Experience!",
+            subject: "Welcome to StunPark: The Smarter Way to Park!",
             html: waitlistEmail,
         })
 
