@@ -27,8 +27,7 @@ const waitlistEmail = `<html>
             <div style=" font-size:18px">
 
                 <p class="p-6">
-                    You are now on private beta waitlist, we will inform you when we releast. If you have any questions
-                    or need assistance, feel free to reach out to our support team at <a class="text-blue-300 underline"
+                    You are now part of our esteemed private beta waitlist, positioning you at the forefront of revolutionary parking experiences. Rest assured, we will notify you promptly once the beta version is released. Should you have any questions or require assistance, our dedicated support team is readily available to assist you. Simply reach out to us at <a class="text-blue-300 underline"
                         href="mailto:beta@stunpark.com">beta@stunpark.com</a>
                 </p>
             </div>
@@ -52,7 +51,7 @@ const waitlistEmail = `<html>
                 <div style="color: #FE4D1A">StunPark</div>
             </div>
             <div>
-                <p>Revolutionalising the parking experiences</p>
+                <p>The Smarter Way to Park.</p>
             </div>
             <div class="flex space-x-3 items-center">
                 <a href="https://twitter.com/stun_park"><svg width="24" height="19" viewBox="0 0 24 19" fill="none"
