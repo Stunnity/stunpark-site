@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         "/*": { headers: { "Cache-Control": "max-age=31536000" } },
     },
 
-    modules: ["@nuxtjs/tailwindcss", "vite-plugin-vue-type-imports/nuxt", "@nuxt/image-edge", "nuxt-og-image", "@nuxtjs/robots"],
+    modules: ["@nuxtjs/tailwindcss", "vite-plugin-vue-type-imports/nuxt", "@nuxt/image-edge", "nuxt-og-image", "@nuxtjs/robots", "nuxt-simple-sitemap"],
 
     // devtools: {
     //     enabled: true,
