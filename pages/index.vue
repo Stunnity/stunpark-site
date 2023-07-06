@@ -111,7 +111,9 @@ function register() {
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-4">
-                    <div class="col-span-2 md:hidden"><nuxt-img loading="lazy" class="w-[20rem]" src="stunpark-mob-app-payment-page.webp" alt="stunpark mobile application payment page" /></div>
+                    <div class="col-span-2 md:hidden">
+                        <nuxt-img loading="lazy" class="w-[20rem]" src="stunpark-mob-app-payment-page.webp" alt="stunpark mobile application payment page" />
+                    </div>
 
                     <div class="gap-y-6 md:gap-4 grid grid-rows-4 px-6 md:px-4">
                         <div>
@@ -251,7 +253,7 @@ function register() {
                 </div>
             </div>
         </main>
-        <footer class="bg-primary px-6 md:px-4">
+        <footer id="contact" class="bg-primary px-6 md:px-4">
             <div class="max-w-[1220px] m-auto">
                 <div class="md:grid md:grid-cols-2 justify-between pt-[1rem] md:pt-[7.625rem] pb-[1rem] md:pb-[4.375rem]">
                     <div class="max-w-[445px] flex-1">
@@ -311,8 +313,9 @@ function register() {
                         </div>
                     </form>
                 </div>
-                <div class="border-t-2 border-t-white/20">
-                    <p class="pb-[3.125rem] pt-[1.5rem] text-sm md:text-base text-white">© {{ currentYear }} . Copyright, All Rights are reserved</p>
+                <div class="border-t-2 border-t-white/20 flex justify-between pb-[3.125rem] pt-[1.5rem]">
+                    <p class="text-sm md:text-base text-white">© {{ currentYear }} . Copyright, All Rights are reserved</p>
+                    <NuxtLink class="text-sm md:text-base text-white" to="/privacy-policy">Privacy Policy</NuxtLink>
                 </div>
             </div>
         </footer>
