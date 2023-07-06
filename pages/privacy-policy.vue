@@ -2,10 +2,15 @@
 useHead({
     title: "StunPark Mobile App | Privacy Policy ",
 })
+
+const ogImageOptions = {}
+// a. Use the Composition API
+defineOgImage(ogImageOptions)
 </script>
 
 <template>
     <main>
+        <MainTemplate />
         <header class="py-8 md:py-16 px-4 md:px-0">
             <SNav>
                 <template #action>

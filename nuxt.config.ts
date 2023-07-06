@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         head: {
             charset: "utf-16",
             viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0,",
-            title: "Stunpark Mobile App | Hassle-Free Parking Experience",
+            title: "StunPark Mobile App | Hassle-Free Parking Experience",
             meta: [
                 {
                     name: "description",
