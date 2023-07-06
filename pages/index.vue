@@ -33,6 +33,10 @@ function register() {
         showMessage.value = false
     }, 4000)
 }
+
+defineOgImage({
+    component: "MainTemplate",
+})
 </script>
 
 <template>
