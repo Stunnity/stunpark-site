@@ -1,6 +1,8 @@
 <template>
     <nav class="flex justify-between items-center bg-white py-4 px-6 rounded-full md:w-5/6 m-auto">
-        <div><SLogo /></div>
+        <div>
+            <NuxtLink to="/"><SLogo /></NuxtLink>
+        </div>
         <ul class="space-x-5 hidden md:flex">
             <li class="text-sm text-primary"><NuxtLink to="/#about"> About </NuxtLink></li>
             <li class="text-sm text-primary"><NuxtLink to="/#features"> Features </NuxtLink></li>
