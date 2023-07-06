@@ -3,14 +3,14 @@ useHead({
     title: "StunPark Mobile App | Privacy Policy ",
 })
 
-const ogImageOptions = {}
-// a. Use the Composition API
-defineOgImage(ogImageOptions)
+defineOgImage({
+    component: "MainTemplate",
+})
 </script>
 
 <template>
     <main>
-        <MainTemplate />
+        <iframe src="/privacy-policy/__og_image__" style="width: 100%; border: none; height: 800px"></iframe>
         <header class="py-8 md:py-16 px-4 md:px-0">
             <SNav>
                 <template #action>
