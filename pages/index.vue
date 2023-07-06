@@ -1,6 +1,10 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 const email = ref("")
 const showMessage = ref(false)
+
+const currentDate = new Date()
+const currentYear = currentDate.getFullYear()
 
 const {
     data,
@@ -307,7 +311,9 @@ function register() {
                         </div>
                     </form>
                 </div>
-                <div class="border-t-2 border-t-white/20"><p class="pb-[3.125rem] pt-[1.5rem] text-sm md:text-base text-white">© 2022 . Copyright, All Rights are reserved</p></div>
+                <div class="border-t-2 border-t-white/20">
+                    <p class="pb-[3.125rem] pt-[1.5rem] text-sm md:text-base text-white">© {{ currentYear }} . Copyright, All Rights are reserved</p>
+                </div>
             </div>
         </footer>
     </div>
