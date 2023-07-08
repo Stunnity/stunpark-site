@@ -10,7 +10,6 @@ defineOgImage({
 
 <template>
     <main>
-    
         <header class="py-8 md:py-16 px-4 md:px-0">
             <SNav>
                 <template #action>
@@ -23,8 +22,8 @@ defineOgImage({
             <p class="py-4 text-black">Last updated: June 2023</p>
 
             <p class="text-grey py-4">
-                Thank you for using stun-park ("App")! this privacy policy explains how we collect, use, and safeguard your personal information when you use our App. we are committed to protecting
-                your privacy and ensuring the security of your information. by using the App, you consent to the practices described in this privacy Policy./p>
+                Thank you for using StunPark! This Privacy Policy outlines how StunPark collects, uses, discloses, and protects the personal information of our users when you use our StunPark mobile
+                application and related services .
             </p>
 
             <h3 class="text-primary font-semibold py-4">1. Information We Collect</h3>
@@ -79,7 +78,7 @@ defineOgImage({
             <h3 class="text-black font-semibold pt-3">4.1. Your choices your rights</h3>
             <p>
                 You have certain rights regarding your personal information, including the right to access, update, and delete your information. If you would like to exercise any of these rights or
-                have any concerns about your privacy, please contact us at [contact email or address]
+                have any concerns about your privacy, please contact us at <a class="underline" href="mailto:stunnity.co@gmail.com">stunnity.co@gmail.com</a>
             </p>
             <h3 class="text-black font-semibold pt-3">4.2. Changes to This Privacy Policy</h3>
             <p>
@@ -88,8 +87,8 @@ defineOgImage({
             </p>
             <h3 class="text-black font-semibold pt-3">4.3. Contact Us</h3>
             <p>
-                If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at [contact email or address]. Remember to review and customize the privacy
-                policy copy to accurately reflect your app's practices and consult with legal professionals or privacy experts to ensure compliance with applicable laws and regulations.
+                If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at
+                <a class="underline" href="mailto:stunnity.co@gmail.com">stunnity.co@gmail.com</a>.
             </p>
         </section>
     </main>
