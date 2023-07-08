@@ -22,8 +22,8 @@ defineOgImage({
             <p class="py-4 text-black">Last updated: June 2023</p>
 
             <p class="text-grey py-4">
-                Thank you for using StunPark! This Privacy Policy outlines how StunPark collects, uses, discloses, and protects the personal information of our users when you use our StunPark mobile
-                application and related services .
+                This Privacy Policy outlines how StunPark collects, uses, discloses, and protects the personal information of our users when you use our StunPark mobile application and related
+                services .
             </p>
 
             <h3 class="text-primary font-semibold py-4">1. Information We Collect</h3>
